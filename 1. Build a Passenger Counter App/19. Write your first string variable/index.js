@@ -1,4 +1,7 @@
-let username = 'per"
+let username = `per`;
 
-console.log(username)
+let message = `you have three new notifications`;
 
+let messageToUser = `${message}, ${username}!`
+
+console.log(messageToUser);
