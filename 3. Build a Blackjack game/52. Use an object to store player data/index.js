@@ -12,7 +12,7 @@ let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 // 3. Grab ahold of the player-el paragraph and store it in a variable called playerEl
-
+let playerEl = document.querySelector("#player-el");
 // 4. Render the player's name and chips in playerEl
 
 function getRandomCard() {
