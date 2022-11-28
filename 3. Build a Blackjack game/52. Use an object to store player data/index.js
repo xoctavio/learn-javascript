@@ -3,6 +3,7 @@ let player = {
     name: "xeble",
     chips: 145
 };
+
 let cards = []
 let sum = 0
 let hasBlackJack = false
@@ -13,7 +14,9 @@ let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 // 3. Grab ahold of the player-el paragraph and store it in a variable called playerEl
 let playerEl = document.querySelector("#player-el");
+
 // 4. Render the player's name and chips in playerEl
+playerEl.textContent = `${player.name}: $${player.chips}`;
 
 function getRandomCard() {
     let randomNumber = Math.floor( Math.random()*13 ) + 1
