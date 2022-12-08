@@ -1,4 +1,4 @@
-let myLeads = []
+let myLeads = ["www.leadone.com", "www.leadtwo.com", "www.leadthree.com"]
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
 
