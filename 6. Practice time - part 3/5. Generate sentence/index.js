@@ -8,6 +8,30 @@
 // "The 2 best fruits are Apples, Bananas"
 
 // Use both a for loop and a template string to solve the challenge
+
+// solution 1
+// function generateSentence(desc, arr) {
+//  return `The ${arr.length} ${desc} are ${arr}`;
+// }
+// const bestDesserts = `best desserts`;
+// let desserts = ["brownies", "cookies"];
+
+// solution 2
 function generateSentence(desc, arr) {
-    
+ let string = `The ${arr.length} ${desc} are: `;
+ for (let i = 0; i < arr.length; i++) {
+  if (i === (arr.length - 1)) {
+   string +=`and ${arr[i]}.`;
+  } else {
+   string +=`${arr[i]}, `;
+  }
+ }
+ return string;
 }
+
+const bestDesserts = `best desserts`;
+let desserts = ["petit gateau", "chocolate chip and sea salt cookies", "cheesecake from that one deli near abbot kinney (canter's?)", "pecan pie", "everything else"];
+
+let sentence = generateSentence(bestDesserts, desserts);
+
+console.log(sentence);
