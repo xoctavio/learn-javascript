@@ -11,11 +11,13 @@ const imgs = [
 const container = document.querySelector("#container");
 
 function renderImages(arr) {
+    let imgsDOM = "";
     for (let i = 0; i < arr.length; i++) {
-        container.innerHTML += `
-        <img class="team-img" src=${arr[i]}>
+        imgsDOM += `
+        <img alt="company employee" class="team-img" src=${arr[i]}>
         `;
     };
+    container.innerHTML = imgsDOM;
 }
 
 renderImages(imgs);
